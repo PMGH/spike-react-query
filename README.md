@@ -422,6 +422,7 @@ function Posts(props) {
   // ...
 }
 ```
+> Not too sure how setting `initialData` helps here as we already pass beers into the component? Maybe caching?
 ```typescript
 // pages/posts.jsx
 import { dehydrate, QueryClient, useQuery } from 'react-query';
