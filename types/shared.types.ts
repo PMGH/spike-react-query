@@ -1,4 +1,4 @@
-export type Beer = {
-  id: string;
+export type Country = {
+  code: string;
   name: string;
 }
