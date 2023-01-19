@@ -13,7 +13,8 @@ import { Beer } from "types/shared.types";
 import { BeersPageProps, FeaturedBeerProps, StaticBeersListProps } from "../../../types/beers.types";
 
 const StaticBeersList = ({ beers }: StaticBeersListProps) => {
-  console.log({ beers })
+  const { data } = useQuery('posts', getBeersQuery, { initialData: beers })
+  console.log({ data, beers })
 
   if (beers) {
     return (
