@@ -1,15 +1,8 @@
 import { AxiosError } from "axios";
 import { Suspense } from "react";
 import { ErrorBoundary } from "react-error-boundary";
-import {
-  useQuery,
-  useMutation,
-  useQueryClient,
-  QueryClient,
-  QueryClientProvider,
-} from 'react-query'
+import { useQuery } from 'react-query'
 import { getCountriesQuery, getCountryQuery, QueryKeys } from "react-query/queries";
-import { Country } from "types/shared.types";
 import { CountriesPageProps, FeaturedCountryProps, StaticCountriesListProps } from "../../../types/countries.types";
 
 const StaticCountriesList = ({ countries }: StaticCountriesListProps) => {
